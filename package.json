@@ -1,0 +1,29 @@
+{
+  "name": "ds3checklist",
+  "version": "1.0.0",
+  "description": "A DS3 checklist for people who want to platinum the game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx mix watch",
+    "prod": "npx mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hinavis/DS3Checklist.git"
+  },
+  "author": "Hinavis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hinavis/DS3Checklist/issues"
+  },
+  "homepage": "https://github.com/Hinavis/DS3Checklist#readme",
+  "dependencies": {
+    "laravel-mix": "^6.0.49"
+  },
+  "devDependencies": {
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.99.0",
+    "sass-loader": "^12.6.0"
+  }
+}

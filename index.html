@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls 3 Checklist</title>
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <link rel="icon" href="/Images/DarkSouls3WebIcon.png" type="image/x-icon">
+    <meta name="description" content="Dark Souls 3 checklist to make obtaining achievements easier">
+    <meta name="keywords" content="dark souls 3, game, checklist, achievements, rings, spells, miracles, pyromancies, dark souls">
+    <meta name="author" content="Hinavis">
+
+    <meta property="og:title" content="Dark Souls 3 checklist">
+    <meta property="og:description" content="Dark Souls 3 checklist for rings, spells, pyromancies and miracles">
+    <meta property="og:image" content="Images/DarkSouls3WebIcon.png">
+    <meta property="og:type" content="website">
+
+    <script src="assets/dist/script.js" defer></script>
+</head>
+<body>
+    <div id="PageContainer">
+        <div id="Header">
+            <div id="HeaderImageContainer">
+                <img id="HeaderImage" src="assets/images/DarkSouls3WebIcon.png" alt="Dark Souls 3 Icon">
+            </div>
+            <div id="HeaderContentBlock">
+                <span>Welcome to the Dark Souls 3 checklist site I made. For now it only consists of the checklist of all the rings and spells however I plan to expand it in the near future. Progress on each checklist is saved using local storage so you won't lose it even if you leave , enjoy and good luck!</span>
+            </div>
+        </div>
+        <div id="Main">
+            <div id="NavigationBox">
+                <div class="NavigationButton" id="RingCLNavButton"> Ring Checklist </div>
+                <div class="NavigationButton DormantButton" id="SpellCLNavButton"> Spell Checklist </div>
+                <div class="NavigationButton DormantButton" id="PyromancyCLNavButton"> Pyromancy Checklist </div>
+                <div class="NavigationButton DormantButton" id="MiracleCLNavButton"> Miracle Checklist </div>
+                <div class="NavigationButton DormantButton" id="GesturesCLNavButton"> Gestures Checklist </div>
+            </div>
+            <div id="RingChecklistBox">
+                <div class="ChecklistBoxHeader">
+                    <p>Ring Checklist</p>
+                </div>
+                <div class="ChecklistBoxContent">
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>NG rings</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" class="RingCheckbox" id="ring1"> Life Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring2"> Estus Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring3"> Covetous Silver Serpent Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring4"> Blue Tearstone Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring5"> Ring of Sacrifice</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring6"> Pontiff's Left Eye</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring7"> Bloodbite Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring8"> Fire Clutch Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring9"> Flame Stoneplate Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring10"> Saint's Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring11"> Hawk Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring12"> Flynn's Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring13"> Chloranthy Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring14"> Mourne's Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring15"> Great Swamp Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring16"> Sage Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring17"> Lingering Dragoncrest Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring18"> Havel's Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring19"> Young Dragon Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring20"> Farron Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring21"> Carthus Milkring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring22"> Carthus Bloodring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring23"> Knight Slayer's Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring24"> Witch's Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring25"> Speckled Stoneplate Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring26"> Lloyd's Shield Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring27"> Poisonbite Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring28"> Lloyd's Sword Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring29"> Aldrich's Sapphire</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring30"> Horsehoof Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring31"> Deep Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring32"> Ring of the Evil Eye</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring33"> Magic Clutch Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring34"> Ring of the Sun's First Born</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring35"> Leo Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring36"> Bellowing Dragoncrest Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring37"> Dark Clutch Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring38"> Dusk Crown Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring39"> Covetous Gold Serpent Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring40"> Lightning Clutch Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring41"> Ring of Steel Protection</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring42"> Calamity Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring43"> Thunder Stoneplate Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring44"> Pontiff's Right Eye</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring45"> Dark Stoneplate Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring46"> Ring of Favor</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring47"> Wood Grain Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring48"> Reversal Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring49"> Aldrich's Ruby</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring50"> Sun Princess Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring51"> Dragonscale Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring52"> Magic Stoneplate Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring53"> Ashen Estus Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring54"> Prisoner's Chain</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring55"> Priestess Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring56"> Hornet Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring57"> Knight's Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring58"> Red Tearstone Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring59"> Scholar's Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring60"> Slumbering Dragoncrest Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring61"> Fleshbite Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring62"> Hunter's Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring63"> Skull Ring</label>
+                            <label><input type="checkbox" class="RingCheckbox" id="ring64"> Cursebite Ring</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>NG+ rings</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="ring65" class="RingCheckbox"> Speckled Stoneplate Ring +1</label>
+                            <label><input type="checkbox" id="ring66" class="RingCheckbox"> Fleshbite Ring +1</label>
+                            <label><input type="checkbox" id="ring67" class="RingCheckbox"> Poisonbite Ring +1</label>
+                            <label><input type="checkbox" id="ring68" class="RingCheckbox"> Life Ring +1</label>
+                            <label><input type="checkbox" id="ring69" class="RingCheckbox"> Lingering Dragoncrest Ring +1</label>
+                            <label><input type="checkbox" id="ring70" class="RingCheckbox"> Wolf Ring +1</label>
+                            <label><input type="checkbox" id="ring71" class="RingCheckbox"> Magic Stoneplate Ring +1</label>
+                            <label><input type="checkbox" id="ring72" class="RingCheckbox"> Thunder Stoneplate Ring +1</label>
+                            <label><input type="checkbox" id="ring73" class="RingCheckbox"> Bloodbite Ring +1</label>
+                            <label><input type="checkbox" id="ring74" class="RingCheckbox"> Ring of the Evil Eye +1</label>
+                            <label><input type="checkbox" id="ring75" class="RingCheckbox"> Chloranthy Ring +1</label>
+                            <label><input type="checkbox" id="ring76" class="RingCheckbox"> Covetous Gold Serpent Ring +1</label>
+                            <label><input type="checkbox" id="ring77" class="RingCheckbox"> Covetous Silver Serpent Ring +1</label>
+                            <label><input type="checkbox" id="ring78" class="RingCheckbox"> Havel's Ring +1</label>
+                            <label><input type="checkbox" id="ring79" class="RingCheckbox"> Ring of Favor +1</label>
+                            <label><input type="checkbox" id="ring80" class="RingCheckbox"> Flame Stoneplate Ring +1</label>
+                            <label><input type="checkbox" id="ring81" class="RingCheckbox"> Wood Grain Ring +1</label>
+                            <label><input type="checkbox" id="ring82" class="RingCheckbox"> Ring of Steel Protection +1</label>
+                            <label><input type="checkbox" id="ring83" class="RingCheckbox"> Dark Stoneplate Ring +1</label>
+                            <label><input type="checkbox" id="ring84" class="RingCheckbox"> Sage Ring +1</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>NG++ rings</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="ring85" class="RingCheckbox"> Wolf Ring +2</label>
+                            <label><input type="checkbox" id="ring86" class="RingCheckbox"> Ring of Evil Eye +2</label>
+                            <label><input type="checkbox" id="ring87" class="RingCheckbox"> Covetous Silver Serpent Ring +2</label>
+                            <label><input type="checkbox" id="ring88" class="RingCheckbox"> Chloranthy Ring +2</label>
+                            <label><input type="checkbox" id="ring89" class="RingCheckbox"> Dark Stoneplate Ring +2</label>
+                            <label><input type="checkbox" id="ring90" class="RingCheckbox"> Ring of Steel Protection +2</label>
+                            <label><input type="checkbox" id="ring91" class="RingCheckbox"> Flame Stoneplate Ring +2</label>
+                            <label><input type="checkbox" id="ring92" class="RingCheckbox"> Ring of Favor +2</label>
+                            <label><input type="checkbox" id="ring93" class="RingCheckbox"> Wood Grain Ring +2</label>
+                            <label><input type="checkbox" id="ring94" class="RingCheckbox"> Havel's Ring +2</label>
+                            <label><input type="checkbox" id="ring95" class="RingCheckbox"> Covetous Gold Serpent Ring +2</label>
+                            <label><input type="checkbox" id="ring96" class="RingCheckbox"> Magic Stoneplate Ring +2</label>
+                            <label><input type="checkbox" id="ring97" class="RingCheckbox"> Sage Ring +2</label>
+                            <label><input type="checkbox" id="ring98" class="RingCheckbox"> Life Ring +2</label>
+                            <label><input type="checkbox" id="ring99" class="RingCheckbox"> Thunder Stoneplate Ring +2</label>
+                            <label><input type="checkbox" id="ring100" class="RingCheckbox"> Lingering Dragoncrest Ring +2</label>
+                            <label><input type="checkbox" id="ring101" class="RingCheckbox"> Life Ring +3</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Covenant and Special rings</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="ring102" class="RingCheckbox"> Darkmoon Ring</label>
+                            <label><input type="checkbox" id="ring103" class="RingCheckbox"> Wolf Ring</label>
+                            <label><input type="checkbox" id="ring104" class="RingCheckbox"> Silvercat Ring</label>
+                            <label><input type="checkbox" id="ring105" class="RingCheckbox"> Obscuring Ring</label>
+                            <label><input type="checkbox" id="ring106" class="RingCheckbox"> Untrue Dark Ring</label>
+                            <label><input type="checkbox" id="ring107" class="RingCheckbox"> Untrue White Ring</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>DLC rings</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="ring108" class="RingCheckbox"> Covetous Silver Serpent Ring +3</label>
+                            <label><input type="checkbox" id="ring109" class="RingCheckbox"> Ring of Steel Protection +3</label>
+                            <label><input type="checkbox" id="ring110" class="RingCheckbox"> Ring of Favor +3</label>
+                            <label><input type="checkbox" id="ring111" class="RingCheckbox"> Wolf Ring +3</label>
+                            <label><input type="checkbox" id="ring112" class="RingCheckbox"> Havel's Ring +3</label>
+                            <label><input type="checkbox" id="ring113" class="RingCheckbox"> Covetous Gold Serpent Ring +3</label>
+                            <label><input type="checkbox" id="ring114" class="RingCheckbox"> Ring of Evil Eye +3</label>
+                            <label><input type="checkbox" id="ring115" class="RingCheckbox"> Chloranthy Ring +3</label>
+                            <label><input type="checkbox" id="ring116" class="RingCheckbox"> Chillbite ring (Not required for the achievement)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="SpellChecklistBox">
+                <div class="ChecklistBoxHeader">
+                    <p>Spell Checklist</p>
+                </div>
+                <div class="ChecklistBoxContent">
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Bought Spells</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="spell1" class="SpellCheckbox">Soul Arrow</label>
+                            <label><input type="checkbox" id="spell2" class="SpellCheckbox">Great Soul Arrow</label>
+                            <label><input type="checkbox" id="spell3" class="SpellCheckbox">Heavy Soul Arrow</label>
+                            <label><input type="checkbox" id="spell4" class="SpellCheckbox">Great Heavy Soul Arrow</label>
+                            <label><input type="checkbox" id="spell5" class="SpellCheckbox">Farron Dart</label>
+                            <label><input type="checkbox" id="spell6" class="SpellCheckbox">Great Farron Dart</label>
+                            <label><input type="checkbox" id="spell7" class="SpellCheckbox">Farron Hail</label>
+                            <label><input type="checkbox" id="spell8" class="SpellCheckbox">Homing Soulmass</label>
+                            <label><input type="checkbox" id="spell9" class="SpellCheckbox">Homing Crystal Soulmass</label>
+                            <label><input type="checkbox" id="spell10" class="SpellCheckbox">Soul Spear</label>
+                            <label><input type="checkbox" id="spell11" class="SpellCheckbox">Crystal Soul Spear</label>
+                            <label><input type="checkbox" id="spell12" class="SpellCheckbox">Soul Greatsword</label>
+                            <label><input type="checkbox" id="spell13" class="SpellCheckbox">Farron Flashsword</label>
+                            <label><input type="checkbox" id="spell14" class="SpellCheckbox">Magic Weapon</label>
+                            <label><input type="checkbox" id="spell15" class="SpellCheckbox">Crystal Magic Weapon</label>
+                            <label><input type="checkbox" id="spell16" class="SpellCheckbox">Magic Shield</label>
+                            <label><input type="checkbox" id="spell17" class="SpellCheckbox">Spook</label>
+                            <label><input type="checkbox" id="spell18" class="SpellCheckbox">Aural Decoy</label>
+                            <label><input type="checkbox" id="spell19" class="SpellCheckbox">Pestilent Mercury</label>
+                            <label><input type="checkbox" id="spell20" class="SpellCheckbox">Cast Light</label>
+                            <label><input type="checkbox" id="spell21" class="SpellCheckbox">Repair</label>
+                            <label><input type="checkbox" id="spell22" class="SpellCheckbox">Hidden Weapon</label>
+                            <label><input type="checkbox" id="spell23" class="SpellCheckbox">Hidden Body</label>
+                            <label><input type="checkbox" id="spell24" class="SpellCheckbox">Twisted Wall of Light</label>
+                            <label><input type="checkbox" id="spell25" class="SpellCheckbox">Affinity</label>
+                            <label><input type="checkbox" id="spell26" class="SpellCheckbox">Dark Edge</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Transposition spells</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="spell27" class="SpellCheckbox">Crystal Hail</label>
+                            <label><input type="checkbox" id="spell28" class="SpellCheckbox">White Dragon Breath</label>
+                            <label><input type="checkbox" id="spell29" class="SpellCheckbox">Deep Soul</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Found spells</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="spell30" class="SpellCheckbox">Soul Stream</label>
+                            <label><input type="checkbox" id="spell31" class="SpellCheckbox">Great Magic Weapon</label>
+                            <label><input type="checkbox" id="spell32" class="SpellCheckbox">Great Magic Shield</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Covenant / Quest spells</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="spell33" class="SpellCheckbox">Chameleon</label>
+                            <label><input type="checkbox" id="spell34" class="SpellCheckbox">Great Deep Soul</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="PyromancyChecklistBox">
+                <div class="ChecklistBoxHeader">
+                    <p>Pyromancy Checklist</p>
+                </div>
+                <div class="ChecklistBoxContent">
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Bought Pyromancies</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="pyromancy1" class="PyromancyCheckbox"> Fireball</label>
+                            <label><input type="checkbox" id="pyromancy2" class="PyromancyCheckbox"> Fire Orb</label>
+                            <label><input type="checkbox" id="pyromancy3" class="PyromancyCheckbox"> Bursting Fireball</label>
+                            <label><input type="checkbox" id="pyromancy4" class="PyromancyCheckbox"> Great Chaos Fire Orb</label>
+                            <label><input type="checkbox" id="pyromancy5" class="PyromancyCheckbox"> Fire Surge</label>
+                            <label><input type="checkbox" id="pyromancy6" class="PyromancyCheckbox"> Fire Whip</label>
+                            <label><input type="checkbox" id="pyromancy7" class="PyromancyCheckbox"> Firestorm</label>
+                            <label><input type="checkbox" id="pyromancy8" class="PyromancyCheckbox"> Chaos Storm</label>
+                            <label><input type="checkbox" id="pyromancy9" class="PyromancyCheckbox"> Great Combustion</label>
+                            <label><input type="checkbox" id="pyromancy10" class="PyromancyCheckbox"> Poison Mist</label>
+                            <label><input type="checkbox" id="pyromancy11" class="PyromancyCheckbox"> Acid Surge</label>
+                            <label><input type="checkbox" id="pyromancy12" class="PyromancyCheckbox"> Flash Sweat</label>
+                            <label><input type="checkbox" id="pyromancy13" class="PyromancyCheckbox"> Profuse Sweat</label>
+                            <label><input type="checkbox" id="pyromancy14" class="PyromancyCheckbox"> Carthus Beacon</label>
+                            <label><input type="checkbox" id="pyromancy15" class="PyromancyCheckbox"> Carthus Flame Arc</label>
+                            <label><input type="checkbox" id="pyromancy16" class="PyromancyCheckbox"> Rapport</label>
+                            <label><input type="checkbox" id="pyromancy17" class="PyromancyCheckbox"> Black Flame</label>
+                            <label><input type="checkbox" id="pyromancy18" class="PyromancyCheckbox"> Black Fire Orb</label>
+                        </div>
+                    </div>
+
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Found Pyromancies</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="pyromancy19" class="PyromancyCheckbox"> Sacred Flame</label>
+                            <label><input type="checkbox" id="pyromancy20" class="PyromancyCheckbox"> Profaned Flame</label>
+                            <label><input type="checkbox" id="pyromancy21" class="PyromancyCheckbox"> Toxic Mist</label>
+                            <label><input type="checkbox" id="pyromancy22" class="PyromancyCheckbox"> Iron Flesh</label>
+                            <label><input type="checkbox" id="pyromancy23" class="PyromancyCheckbox"> Power Within</label>
+                        </div>
+                    </div>
+
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Transposed Pyromancies</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="pyromancy24" class="PyromancyCheckbox"> Chaos Bed Vestiges</label>
+                            <label><input type="checkbox" id="pyromancy25" class="PyromancyCheckbox"> Boulder Heave</label>
+                            <label><input type="checkbox" id="pyromancy26" class="PyromancyCheckbox"> Black Serpent</label>
+                        </div>
+                    </div>
+
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Covenant Pyromancies</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="pyromancy27" class="PyromancyCheckbox"> Warmth </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="MiracleChecklistBox">
+                <div class="ChecklistBoxHeader">
+                    <p>Miracle Checklist</p>
+                </div>
+                <div class="ChecklistBoxContent">
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Bought Miracles</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="miracle1" class="MiracleCheckbox"> Heal Aid</label>
+                            <label><input type="checkbox" id="miracle2" class="MiracleCheckbox"> Heal</label>
+                            <label><input type="checkbox" id="miracle3" class="MiracleCheckbox"> Med Heal</label>
+                            <label><input type="checkbox" id="miracle4" class="MiracleCheckbox"> Replenishment</label>
+                            <label><input type="checkbox" id="miracle5" class="MiracleCheckbox"> Caressing Tears</label>
+                            <label><input type="checkbox" id="miracle6" class="MiracleCheckbox"> Tears of Denial</label>
+                            <label><input type="checkbox" id="miracle7" class="MiracleCheckbox"> Homeward</label>
+                            <label><input type="checkbox" id="miracle8" class="MiracleCheckbox"> Force</label>
+                            <label><input type="checkbox" id="miracle9" class="MiracleCheckbox"> Blessed Weapon</label>
+                            <label><input type="checkbox" id="miracle10" class="MiracleCheckbox"> Magic Barrier</label>
+                            <label><input type="checkbox" id="miracle11" class="MiracleCheckbox"> Dark Blade</label>
+                            <label><input type="checkbox" id="miracle12" class="MiracleCheckbox"> Vow of Silence</label>
+                            <label><input type="checkbox" id="miracle13" class="MiracleCheckbox"> Dead Again</label>
+                            <label><input type="checkbox" id="miracle14" class="MiracleCheckbox"> Deep Protection</label>
+                            <label><input type="checkbox" id="miracle15" class="MiracleCheckbox"> Gnaw</label>
+                            <label><input type="checkbox" id="miracle16" class="MiracleCheckbox"> Bountiful Light</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Found Miracles</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="miracle17" class="MiracleCheckbox"> Great Heal</label>
+                            <label><input type="checkbox" id="miracle18" class="MiracleCheckbox"> Seek Guidance</label>
+                            <label><input type="checkbox" id="miracle19" class="MiracleCheckbox"> Wrath of The Gods</label>
+                            <label><input type="checkbox" id="miracle20" class="MiracleCheckbox"> Lightning Spear</label>
+                            <label><input type="checkbox" id="miracle21" class="MiracleCheckbox"> Lightning Stake</label>
+                            <label><input type="checkbox" id="miracle22" class="MiracleCheckbox"> Divine Pillars of Light</label>
+                            <label><input type="checkbox" id="miracle23" class="MiracleCheckbox"> Lightning Blade</label>
+                            <label><input type="checkbox" id="miracle24" class="MiracleCheckbox"> Great Magic Barrier</label>
+                            <label><input type="checkbox" id="miracle25" class="MiracleCheckbox"> Atonement</label>
+                            <label><input type="checkbox" id="miracle26" class="MiracleCheckbox"> Dorthy's Gnawing</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Transposed Miracles</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="miracle27" class="MiracleCheckbox"> Soothing Sunlight</label>
+                            <label><input type="checkbox" id="miracle28" class="MiracleCheckbox"> Bountiful Sunlight</label>
+                            <label><input type="checkbox" id="miracle29" class="MiracleCheckbox"> Sunlight Spear</label>
+                            <label><input type="checkbox" id="miracle30" class="MiracleCheckbox"> Lightning Storm</label>
+                            <label><input type="checkbox" id="miracle31" class="MiracleCheckbox"> Lifehunt Scythe</label>
+                        </div>
+                    </div>
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Covenant / Quest Miracles</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            <label><input type="checkbox" id="miracle32" class="MiracleCheckbox"> Sacred Oath</label>
+                            <label><input type="checkbox" id="miracle33" class="MiracleCheckbox"> Emit Force</label>
+                            <label><input type="checkbox" id="miracle34" class="MiracleCheckbox"> Great Lightning Spear</label>
+                            <label><input type="checkbox" id="miracle35" class="MiracleCheckbox"> Darkmoon Blade</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="GesturesChecklistBox">
+                <div class="ChecklistBoxHeader">
+                    <p>Gestures Checklist</p>
+                </div>
+                <div class="ChecklistBoxContent">
+                    <div class="ChecklistBoxSection">
+                        <div class="ChecklistBoxSectionHeader">
+                            <p>Gestures</p>
+                        </div>
+                        <div class="ChecklistBoxSectionContent">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="Footer">
+            <div id="FooterSubContainer">
+                <span id="GithubLogoContainer"><img src="assets/images/GitHubLogo.png" alt="GithubLogo"></span> 
+                <span>Github:  <a href="https://github.com/Hinavis">Hinavis</a></span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
