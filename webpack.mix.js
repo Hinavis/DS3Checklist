@@ -6,3 +6,7 @@ mix.setPublicPath('assets/dist');
 
 mix.js('assets/src/js/index.js', 'script.js');
 mix.sass('assets/src/scss/index.scss', 'style.css');
+
+mix.options({
+    processCssUrls: false
+});
