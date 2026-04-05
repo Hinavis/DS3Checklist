@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Souls 3 Checklist</title>
     <link rel="stylesheet" href="assets/dist/style.css">
-    <link rel="icon" href="/Images/DarkSouls3WebIcon.png" type="image/x-icon">
+    <link rel="icon" href="/assets/images/DarkSouls3WebIcon.png" type="image/x-icon">
     <meta name="description" content="Dark Souls 3 checklist to make obtaining achievements easier">
     <meta name="keywords" content="dark souls 3, game, checklist, achievements, rings, spells, miracles, pyromancies, dark souls">
     <meta name="author" content="Hinavis">
 
     <meta property="og:title" content="Dark Souls 3 checklist">
     <meta property="og:description" content="Dark Souls 3 checklist for rings, spells, pyromancies and miracles">
-    <meta property="og:image" content="Images/DarkSouls3WebIcon.png">
+    <meta property="og:image" content="/assets/images/DarkSouls3WebIcon.png">
     <meta property="og:type" content="website">
 
     <script src="assets/dist/script.js" defer></script>
@@ -24,7 +24,7 @@
                 <img id="HeaderImage" src="assets/images/DarkSouls3WebIcon.png" alt="Dark Souls 3 Icon">
             </div>
             <div id="HeaderContentBlock">
-                <span>Welcome to the Dark Souls 3 checklist site I made. For now it only consists of the checklist of all the rings and spells however I plan to expand it in the near future. Progress on each checklist is saved using local storage so you won't lose it even if you leave , enjoy and good luck!</span>
+                <span>Welcome to the Dark Souls 3 checklist site I made. It has checklists of all the rings, spells , pyromancies , miracles and gestures available in the game. Progress on each checklist is saved using local storage so you won't lose it even if you leave. Enjoy and good luck in getting platinum!</span>
             </div>
         </div>
         <div id="Main">
@@ -43,6 +43,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>NG rings</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" class="RingCheckbox" id="ring1"> Life Ring</label>
@@ -114,6 +118,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>NG+ rings</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="ring65" class="RingCheckbox"> Speckled Stoneplate Ring +1</label>
@@ -141,6 +149,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>NG++ rings</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="ring85" class="RingCheckbox"> Wolf Ring +2</label>
@@ -165,6 +177,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Covenant and Special rings</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="ring102" class="RingCheckbox"> Darkmoon Ring</label>
@@ -178,6 +194,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>DLC rings</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="ring108" class="RingCheckbox"> Covetous Silver Serpent Ring +3</label>
@@ -202,63 +222,79 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Bought Spells</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
-                            <label><input type="checkbox" id="spell1" class="SpellCheckbox">Soul Arrow</label>
-                            <label><input type="checkbox" id="spell2" class="SpellCheckbox">Great Soul Arrow</label>
-                            <label><input type="checkbox" id="spell3" class="SpellCheckbox">Heavy Soul Arrow</label>
-                            <label><input type="checkbox" id="spell4" class="SpellCheckbox">Great Heavy Soul Arrow</label>
-                            <label><input type="checkbox" id="spell5" class="SpellCheckbox">Farron Dart</label>
-                            <label><input type="checkbox" id="spell6" class="SpellCheckbox">Great Farron Dart</label>
-                            <label><input type="checkbox" id="spell7" class="SpellCheckbox">Farron Hail</label>
-                            <label><input type="checkbox" id="spell8" class="SpellCheckbox">Homing Soulmass</label>
-                            <label><input type="checkbox" id="spell9" class="SpellCheckbox">Homing Crystal Soulmass</label>
-                            <label><input type="checkbox" id="spell10" class="SpellCheckbox">Soul Spear</label>
-                            <label><input type="checkbox" id="spell11" class="SpellCheckbox">Crystal Soul Spear</label>
-                            <label><input type="checkbox" id="spell12" class="SpellCheckbox">Soul Greatsword</label>
-                            <label><input type="checkbox" id="spell13" class="SpellCheckbox">Farron Flashsword</label>
-                            <label><input type="checkbox" id="spell14" class="SpellCheckbox">Magic Weapon</label>
-                            <label><input type="checkbox" id="spell15" class="SpellCheckbox">Crystal Magic Weapon</label>
-                            <label><input type="checkbox" id="spell16" class="SpellCheckbox">Magic Shield</label>
-                            <label><input type="checkbox" id="spell17" class="SpellCheckbox">Spook</label>
-                            <label><input type="checkbox" id="spell18" class="SpellCheckbox">Aural Decoy</label>
-                            <label><input type="checkbox" id="spell19" class="SpellCheckbox">Pestilent Mercury</label>
-                            <label><input type="checkbox" id="spell20" class="SpellCheckbox">Cast Light</label>
-                            <label><input type="checkbox" id="spell21" class="SpellCheckbox">Repair</label>
-                            <label><input type="checkbox" id="spell22" class="SpellCheckbox">Hidden Weapon</label>
-                            <label><input type="checkbox" id="spell23" class="SpellCheckbox">Hidden Body</label>
-                            <label><input type="checkbox" id="spell24" class="SpellCheckbox">Twisted Wall of Light</label>
-                            <label><input type="checkbox" id="spell25" class="SpellCheckbox">Affinity</label>
-                            <label><input type="checkbox" id="spell26" class="SpellCheckbox">Dark Edge</label>
+                            <label><input type="checkbox" id="spell1" class="SpellCheckbox"> Soul Arrow</label>
+                            <label><input type="checkbox" id="spell2" class="SpellCheckbox"> Great Soul Arrow</label>
+                            <label><input type="checkbox" id="spell3" class="SpellCheckbox"> Heavy Soul Arrow</label>
+                            <label><input type="checkbox" id="spell4" class="SpellCheckbox"> Great Heavy Soul Arrow</label>
+                            <label><input type="checkbox" id="spell5" class="SpellCheckbox"> Farron Dart</label>
+                            <label><input type="checkbox" id="spell6" class="SpellCheckbox"> Great Farron Dart</label>
+                            <label><input type="checkbox" id="spell7" class="SpellCheckbox"> Farron Hail</label>
+                            <label><input type="checkbox" id="spell8" class="SpellCheckbox"> Homing Soulmass</label>
+                            <label><input type="checkbox" id="spell9" class="SpellCheckbox"> Homing Crystal Soulmass</label>
+                            <label><input type="checkbox" id="spell10" class="SpellCheckbox"> Soul Spear</label>
+                            <label><input type="checkbox" id="spell11" class="SpellCheckbox"> Crystal Soul Spear</label>
+                            <label><input type="checkbox" id="spell12" class="SpellCheckbox"> Soul Greatsword</label>
+                            <label><input type="checkbox" id="spell13" class="SpellCheckbox"> Farron Flashsword</label>
+                            <label><input type="checkbox" id="spell14" class="SpellCheckbox"> Magic Weapon</label>
+                            <label><input type="checkbox" id="spell15" class="SpellCheckbox"> Crystal Magic Weapon</label>
+                            <label><input type="checkbox" id="spell16" class="SpellCheckbox"> Magic Shield</label>
+                            <label><input type="checkbox" id="spell17" class="SpellCheckbox"> Spook</label>
+                            <label><input type="checkbox" id="spell18" class="SpellCheckbox"> Aural Decoy</label>
+                            <label><input type="checkbox" id="spell19" class="SpellCheckbox"> Pestilent Mercury</label>
+                            <label><input type="checkbox" id="spell20" class="SpellCheckbox"> Cast Light</label>
+                            <label><input type="checkbox" id="spell21" class="SpellCheckbox"> Repair</label>
+                            <label><input type="checkbox" id="spell22" class="SpellCheckbox"> Hidden Weapon</label>
+                            <label><input type="checkbox" id="spell23" class="SpellCheckbox"> Hidden Body</label>
+                            <label><input type="checkbox" id="spell24" class="SpellCheckbox"> Twisted Wall of Light</label>
+                            <label><input type="checkbox" id="spell25" class="SpellCheckbox"> Affinity</label>
+                            <label><input type="checkbox" id="spell26" class="SpellCheckbox"> Dark Edge</label>
                         </div>
                     </div>
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Transposition spells</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
-                            <label><input type="checkbox" id="spell27" class="SpellCheckbox">Crystal Hail</label>
-                            <label><input type="checkbox" id="spell28" class="SpellCheckbox">White Dragon Breath</label>
-                            <label><input type="checkbox" id="spell29" class="SpellCheckbox">Deep Soul</label>
+                            <label><input type="checkbox" id="spell27" class="SpellCheckbox"> Crystal Hail</label>
+                            <label><input type="checkbox" id="spell28" class="SpellCheckbox"> White Dragon Breath</label>
+                            <label><input type="checkbox" id="spell29" class="SpellCheckbox"> Deep Soul</label>
                         </div>
                     </div>
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Found spells</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
-                            <label><input type="checkbox" id="spell30" class="SpellCheckbox">Soul Stream</label>
-                            <label><input type="checkbox" id="spell31" class="SpellCheckbox">Great Magic Weapon</label>
-                            <label><input type="checkbox" id="spell32" class="SpellCheckbox">Great Magic Shield</label>
+                            <label><input type="checkbox" id="spell30" class="SpellCheckbox"> Soul Stream</label>
+                            <label><input type="checkbox" id="spell31" class="SpellCheckbox"> Great Magic Weapon</label>
+                            <label><input type="checkbox" id="spell32" class="SpellCheckbox"> Great Magic Shield</label>
                         </div>
                     </div>
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Covenant / Quest spells</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
-                            <label><input type="checkbox" id="spell33" class="SpellCheckbox">Chameleon</label>
-                            <label><input type="checkbox" id="spell34" class="SpellCheckbox">Great Deep Soul</label>
+                            <label><input type="checkbox" id="spell33" class="SpellCheckbox"> Chameleon</label>
+                            <label><input type="checkbox" id="spell34" class="SpellCheckbox"> Great Deep Soul</label>
                         </div>
                     </div>
                 </div>
@@ -272,6 +308,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Bought Pyromancies</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="pyromancy1" class="PyromancyCheckbox"> Fireball</label>
@@ -298,6 +338,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Found Pyromancies</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="pyromancy19" class="PyromancyCheckbox"> Sacred Flame</label>
@@ -311,6 +355,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Transposed Pyromancies</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="pyromancy24" class="PyromancyCheckbox"> Chaos Bed Vestiges</label>
@@ -338,6 +386,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Bought Miracles</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="miracle1" class="MiracleCheckbox"> Heal Aid</label>
@@ -361,6 +413,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Found Miracles</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="miracle17" class="MiracleCheckbox"> Great Heal</label>
@@ -378,6 +434,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Transposed Miracles</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="miracle27" class="MiracleCheckbox"> Soothing Sunlight</label>
@@ -390,6 +450,10 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Covenant / Quest Miracles</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
                             <label><input type="checkbox" id="miracle32" class="MiracleCheckbox"> Sacred Oath</label>
@@ -409,9 +473,38 @@
                     <div class="ChecklistBoxSection">
                         <div class="ChecklistBoxSectionHeader">
                             <p>Gestures</p>
+                            <div class="CheckButtonsContainer">
+                                <div class="CheckButton">Check All</div>
+                                <div class="UncheckButton">Uncheck All</div>
+                            </div>
                         </div>
                         <div class="ChecklistBoxSectionContent">
-                            
+                            <label><input type="checkbox" id="gesture1" class="GestureCheckbox"> Beckon</label>
+                            <label><input type="checkbox" id="gesture2" class="GestureCheckbox"> Call Over</label>
+                            <label><input type="checkbox" id="gesture3" class="GestureCheckbox"> Welcome</label>
+                            <label><input type="checkbox" id="gesture4" class="GestureCheckbox"> Applause</label>
+                            <label><input type="checkbox" id="gesture5" class="GestureCheckbox"> Quiet Resolve</label>
+                            <label><input type="checkbox" id="gesture6" class="GestureCheckbox"> Rejoice</label>
+                            <label><input type="checkbox" id="gesture7" class="GestureCheckbox"> Hurrah!</label>
+                            <label><input type="checkbox" id="gesture8" class="GestureCheckbox"> Praise the Sun</label>
+                            <label><input type="checkbox" id="gesture9" class="GestureCheckbox"> My Thanks!</label>
+                            <label><input type="checkbox" id="gesture10" class="GestureCheckbox"> Proper Bow</label>
+                            <label><input type="checkbox" id="gesture11" class="GestureCheckbox"> Dignified Bow</label>
+                            <label><input type="checkbox" id="gesture12" class="GestureCheckbox"> Duel Bow</label>
+                            <label><input type="checkbox" id="gesture13" class="GestureCheckbox"> Legion Etiquette</label>
+                            <label><input type="checkbox" id="gesture14" class="GestureCheckbox"> Darkmoon Loyalty</label>
+                            <label><input type="checkbox" id="gesture15" class="GestureCheckbox"> By My Sword</label>
+                            <label><input type="checkbox" id="gesture16" class="GestureCheckbox"> Prayer</label>
+                            <label><input type="checkbox" id="gesture17" class="GestureCheckbox"> Silent Ally</label>
+                            <label><input type="checkbox" id="gesture18" class="GestureCheckbox"> Rest</label>
+                            <label><input type="checkbox" id="gesture19" class="GestureCheckbox"> Collapse</label>
+                            <label><input type="checkbox" id="gesture20" class="GestureCheckbox"> Patches Squat</label>
+                            <label><input type="checkbox" id="gesture21" class="GestureCheckbox"> Prostration</label>
+                            <label><input type="checkbox" id="gesture22" class="GestureCheckbox"> Toast</label>
+                            <label><input type="checkbox" id="gesture23" class="GestureCheckbox"> Sleep</label>
+                            <label><input type="checkbox" id="gesture24" class="GestureCheckbox"> Curl Up</label>
+                            <label><input type="checkbox" id="gesture25" class="GestureCheckbox"> Stretch Out</label>
+                            <label><input type="checkbox" id="gesture26" class="GestureCheckbox"> Path of the Dragon</label>
                         </div>
                     </div>
                 </div>

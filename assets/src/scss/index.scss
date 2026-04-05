@@ -76,18 +76,25 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 10px;
+    padding-bottom: 10px;
 }
 
-.NavigationButton{
+.NavigationButton, .CheckButton, .UncheckButton{
     background-color: var(--Black);
     border: 2px solid var(--PaleGold);
     padding: 10px;
+    cursor: pointer;
 }
 
 .DormantButton{
     background-color: var(--DarkGrey);
     color: var(--HiddenText);
     filter: grayscale(80%);
+    transition: 0.8s;
+}
+
+.DormantButton:hover{
+    background-color: var(--Black);
 }
 
 #RingChecklistBox{
@@ -108,6 +115,8 @@ body {
 
 .ChecklistBoxHeader{
     font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--PaleGold);
 }
 
 .ChecklistBoxContent{
@@ -122,13 +131,31 @@ body {
     flex-direction: column;
     padding: 5px;
     height: 300px;
-    width: 80%;
+    width: 60%;
 }
 
 .ChecklistBoxSectionHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
     font-size: 18px;
     padding: 5px 5px 10px 5px;
     border-bottom: 2px solid var(--PaleGold);
+}
+
+.CheckButtonsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.CheckButton, .UncheckButton{
+    font-size: 14px;
 }
 
 .ChecklistBoxSectionContent{

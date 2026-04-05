@@ -77,4 +77,28 @@ document.addEventListener('DOMContentLoaded', () =>{
     for (let NavButton of AllNavButtons){
         NavButton.addEventListener('click', ShowChecklist);
     }
+
+    AllCheckButtons = document.querySelectorAll(".CheckButton");
+    AllUncheckButtons = document.querySelectorAll(".UncheckButton");    
+    for(let CheckButton of AllCheckButtons){
+        CheckButton.addEventListener('click', (e)=>{
+            ParentElement = e.target.closest(".ChecklistBoxSection");
+            let NearestListOfCheckboxes = ParentElement.children[1].querySelectorAll("input[type='checkbox']")
+            for(let Checkbox of NearestListOfCheckboxes){
+                Checkbox.checked = true;
+                localStorage.setItem(Checkbox.id, true);
+            }
+        })
+    }
+
+    for(let UncheckButton of AllUncheckButtons){
+        UncheckButton.addEventListener('click', (e)=>{
+            ParentElement = e.target.closest(".ChecklistBoxSection");
+            let NearestListOfCheckboxes = ParentElement.children[1].querySelectorAll("input[type='checkbox']")
+            for(let Checkbox of NearestListOfCheckboxes){
+                Checkbox.checked = false;
+                localStorage.setItem(Checkbox.id, false);
+            }
+        })
+    }
 });
