@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: 10px;
+    scrollbar-color: rgb(0, 0, 105);
 }
 
 a , a:visited, a:hover {
@@ -15,6 +17,7 @@ html {
 
 
 :root { 
+    color-scheme: dark;
     --PaleGold: #ab966f;
     --Black: #000000;
     --DarkGrey: #1f1f1f;
@@ -123,14 +126,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .ChecklistBoxSection{
     display: flex;
     flex-direction: column;
     padding: 5px;
-    height: 300px;
+    max-height: 415px;
     width: 60%;
 }
 
@@ -141,7 +144,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px 5px 10px 5px;
     border-bottom: 2px solid var(--PaleGold);
 }
